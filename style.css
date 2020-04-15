@@ -1,17 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap');
 
+:root {
+  --bg-color: #f5f5f5;
+  --primary-color: #c94451;
+  --primary-color-hover: #dd8992;
+  --secondary-color: #d6d6d6;
+  --text-color: black;
+  --borde-color: #edebec;
+  --color3: #f4ebef;
+  --color4: #7c848c;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background: #f5f5f5;
+  background: var(--bg-color);
+  color: var(--text-color)
 }
 
 a {
   text-decoration: none;
-  color: #c94451;
+  color: var(--primary-color);
 }
 
 a:hover {
-  color: #dd8992;
+  color: var(--primary-color-hover);
 }
 
 p {
@@ -19,7 +31,7 @@ p {
 }
 
 hr {
-  border-top: 1px solid #f4ebef;
+  border-top: 1px solid var(--color3);
 }
 
 .container {
@@ -46,7 +58,7 @@ header .subtitle {
 header nav ul {
   margin: 0;
   padding: 0;
-  background: #d6d6d6;
+  background: var(--secondary-color);
   border-radius: 0.25rem;
   font-size: 0.75rem;
   font-weight: bold;
@@ -69,12 +81,12 @@ header nav ul li a {
 }
 
 header nav ul li a.active {
-  background: #c94451;
+  background: var(--primary-color);
   color: white;
 }
 
 header nav ul li a.active:hover {
-  color: black;
+  color: var(--secondary-color);
 }
 
 header nav ul:first-child a.active {
@@ -102,7 +114,7 @@ section.featured article {
 section.featured article .tag {
   grid-area: tag;
   font-weight: bold;
-  color: #7c848c;
+  color: var(--color4);
   margin-bottom: 0.5rem;
 }
 
@@ -119,7 +131,7 @@ section.featured article .image {
   grid-area: image;
   margin: 1rem;
   width: calc(100% - 2rem);
-  border: 1px solid #edebec;
+  border: 1px solid var(--borde-color);
   padding: 0.5rem;
 }
 
@@ -174,7 +186,7 @@ footer .social img {
 
 footer .copyright {
   font-size: 0.75rem;
-  color: #7c848c;
+  color: var(--color4);
 }
 
 @media screen and (min-width: 576px) {
