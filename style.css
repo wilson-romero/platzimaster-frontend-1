@@ -148,17 +148,17 @@ section.blog article.entry .content h3 {
   margin-top: 0;
 }
 
-footer section.last {
+section.last {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-footer section.last .image {
+section.last .image {
   width: 100%;
   margin-bottom: 1rem;
 }
 
-footer div.last {
+footer {
   display: flex;
   justify-content: space-between;
 }
@@ -193,12 +193,12 @@ footer .copyright {
     flex-direction: row-reverse;
   }
 
-  footer section.last {
+  section.last {
     display: grid;
     grid-template-columns: 40% auto;
   }
 
-  footer section.last .image {
+  section.last .image {
     width: calc(100% - 2rem);
     margin-bottom: 0;
   }
